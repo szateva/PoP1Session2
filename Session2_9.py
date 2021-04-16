@@ -11,3 +11,9 @@ TESTS:
 Input: 0 5 Output: 0 1 2 3 4 5
 Input: 3 9 Output: 3 4 5 6 7 8 9
 Input: 2 17 Output: 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 """
+
+num1 = int(input("type in first no: "))
+num2 = int(input("type in second no: "))
+
+for i in range(num1, num2+1):
+    print(i, end=" ")
