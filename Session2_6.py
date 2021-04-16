@@ -11,3 +11,13 @@ TESTS:
 Input: 8 3 4 0 Output: 8
 Input: 9 4 3 7 1 12 0 Output: 12
 Input: 3 1 7 89 3 56 0 Output: 89 """
+
+num = int(input("Type in the sequence numbers, type 0 when finished: "))
+largest = num
+
+while num != 0:
+    if largest < num:
+        largest = num
+    num = int(input("Type in the sequence numbers, type 0 when finished: "))
+
+print(largest)
