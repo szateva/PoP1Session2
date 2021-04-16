@@ -11,3 +11,14 @@ TESTS:
 Input: 1 2 3 4 0 Output: 3
 Input: 5 3 4 3 4 2 1 5 0 Output: 3
 Input: 5 10 4 4 4 7 8 8 9 10 0 Output: 5 """
+
+num = int(input("Type in the sequence numbers, type 0 when finished: "))
+count = 0
+previous = num
+while num != 0:
+    num = int(input("Type in the sequence numbers, type 0 when finished: "))
+    if previous < num:
+        count +=1
+    previous = num
+
+print("final count: ", count)
