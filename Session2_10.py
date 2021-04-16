@@ -17,3 +17,10 @@ Input: 2 Output: 2
 Input: 4 Output: 24
 Input: 8 Output: 40320
 Input: 10 Output: 3628800 """
+
+num = int(input("type a number: "))
+factorial = 1
+
+for i in range(1, num+1):
+    factorial *= i
+print(factorial)
