@@ -16,3 +16,10 @@ Input: 100 Output: 6 64
 Input: 1024 Output: 10 1024 """
 
 num = int(input("Type a number: "))
+count = 0
+power_of_two = 1
+
+while power_of_two <= num:
+    power_of_two *= 2
+    count += 1
+print(count - 1, int(power_of_two / 2))
