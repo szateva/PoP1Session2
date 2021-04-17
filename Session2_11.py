@@ -46,3 +46,11 @@ Output:
 Input: 1 4
 Output:
 1 2 3 4 """
+
+num1 = int(input("Type the first number: "))
+num2 = int(input("Type the second number: "))
+
+for first in range(1, num1+1):
+    print()
+    for second in range(1, num2+1):
+        print(first * second, end=" ")
