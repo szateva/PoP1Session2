@@ -22,3 +22,16 @@ concat("ABC", "DEF") must be "ABC DEF"
 
 Case 3:
 concat("xyz", " abc") must be "xyz abc" """
+
+def concat(s1, s2):
+    s = s1 + " " + s2
+    return s
+a = concat("John", "Doe")
+print(a)
+print("must be John Doe")
+b = concat("ABC", "DEF")
+print(b)
+print("must be ABC DEF")
+c = concat("xyz", " abc")
+print(c)
+print("must be xyz abc")
