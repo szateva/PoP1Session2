@@ -25,3 +25,24 @@ Case 1:
 distance(1,2,6,8) must be around 7.81
 Case 2:
 distance(1,5,5,2) must be around 5.0 """
+
+import math
+
+def distance(x1, y1, x2, y2):
+    x_dist = x2-x1
+    y_dist = y2-y1
+    dist = math.sqrt(x_dist**2 + y_dist**2)
+    return dist
+
+d1 = distance(1,2,6,8)
+print(d1)
+print("must be around 7.81")
+d2 = distance(1,5,5,2)
+print(d2)
+print("must be around 5.0")
+d3 = distance(5, 2, 3, 1)
+print(d3)
+print("must be around 2.23")
+d4 = distance(4, -2, 7, 5)
+print(d4)
+print("must be around 7.61")
