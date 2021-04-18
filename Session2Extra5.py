@@ -13,3 +13,13 @@ TESTS:
 Input: 3 Output: 9
 Input: 4 Output: 33
 Input: 5 Output: 153 """
+
+num = int(input(("Type a number: ")))
+
+total = 0
+factorial = 1
+
+for i in range(1, num + 1):
+    factorial *= i
+    total += factorial
+print(total)
