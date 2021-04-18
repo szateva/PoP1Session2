@@ -44,3 +44,12 @@ Input:
 0
 15
 Output: 3 """
+
+zeros = 0
+num = int(input("How many numbers? "))
+
+for i in  range(num):
+    num_to_check = int(input("type the number: "))
+    if num_to_check == 0:
+        zeros += 1
+print(zeros)
