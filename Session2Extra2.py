@@ -4,7 +4,8 @@
 Determine the index of the largest element of the sequence. If the largest element is not unique,
 print the index of the first of them.
 
-Assume that indexing starts with 0, i.e., the first element in the sequence has index 0, the following element has index 1, etc.
+Assume that indexing starts with 0, i.e., the first element in the sequence has index 0,
+the following element has index 1, etc.
 
 For example, on input
 2
@@ -75,3 +76,16 @@ Input:
 8
 0
 Output: 0 """
+
+count = 0
+num = int(input("Type in a number: "))
+largest = num
+largest_index = count
+
+while num != 0:
+    if num > largest:
+        largest = num
+        largest_index = count
+    num = int(input("Type in a number: "))
+    count += 1
+print(largest_index)
