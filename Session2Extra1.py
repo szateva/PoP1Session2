@@ -60,3 +60,11 @@ Input:
 19
 20
 Output: 210 """
+
+total = 0
+num = int(input("How many numbers? "))
+
+for i in  range(num):
+    num_to_add = int(input("type the number: "))
+    total += num_to_add
+print(total)
