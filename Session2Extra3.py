@@ -15,3 +15,15 @@ Input: 5 5 Output: 5
 Input: 7 3 Output: 7 6 5 4 3
 Input: -10 -6 Output: -10 -9 =8 -7 -6
 Input: -6 -10 Output: -6 -7 -8 -9 -10 """
+
+num1 = int(input("type a number: "))
+num2 = int(input("type a number: "))
+
+if num1 < num2:
+    for i in range(num1, num2 + 1):
+        print(i, end=" ")
+elif num1 == num2:
+    print(num1)
+else:
+    for i in range(num1, num2 - 1, -1):
+        print(i, end=" ")
